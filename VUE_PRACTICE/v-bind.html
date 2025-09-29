@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+    <head>
+        <title>v-bind</title>
+    </head>
+    <body>
+        <div id="my-app">   
+        <h1 v-bind:style="{color:mycolor,fontSize:size+'px'}"> {{greet}} {{name}}</h1>
+        <h1 v-bind:style="styles"> VIRAT KOHLI </h1>
+      
+
+         
+        </div>
+       
+
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.7.16/dist/vue.min.js"></script>
+        <script>
+            var vm = new Vue( {
+                el : '#my-app',
+                data:{
+                    name : "MOHITH URS",
+                    greet : "HELLO",
+                    mycolor : "red",
+                    size : 80,
+                    styles :{
+                        color : "red",
+                        fontSize : "50px",
+                        padding : "30px"
+                    }
+                }
+            } );
+        </script>
+        </body>  
+</html>    
